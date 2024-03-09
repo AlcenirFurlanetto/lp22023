@@ -177,10 +177,8 @@ public class TelaEndereco extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new TelaEndereco().setVisible(true);
-            }
+        java.awt.EventQueue.invokeLater(() -> {
+            new TelaEndereco().setVisible(true);
         });
     }
 

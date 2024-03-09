@@ -51,6 +51,12 @@ public class TelaCidade extends javax.swing.JFrame {
             }
         });
 
+        jTFCodigoIbge.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTFCodigoIbgeActionPerformed(evt);
+            }
+        });
+
         jLabel1.setText("Nome da  Cidade");
 
         jLabel2.setText("Codigo Ibge");
@@ -147,6 +153,10 @@ public class TelaCidade extends javax.swing.JFrame {
     private void jBExcluirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBExcluirActionPerformed
         exlcuir();
     }//GEN-LAST:event_jBExcluirActionPerformed
+
+    private void jTFCodigoIbgeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTFCodigoIbgeActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTFCodigoIbgeActionPerformed
    
     private void limpar(){
        jTFCodigoIbge.setText("");
@@ -186,6 +196,7 @@ public class TelaCidade extends javax.swing.JFrame {
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
+            @Override
             public void run() {
                 new TelaCidade().setVisible(true);
             }

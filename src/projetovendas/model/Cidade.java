@@ -1,16 +1,10 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package projetovendas.model;
 
 
 import java.sql.SQLException;
 import projetovendas.interfaces.IOperacao;
-
 import java.sql.Statement;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 /**
  *
@@ -49,12 +43,11 @@ public class Cidade implements IOperacao {
         try {
             mysqStatement.executeUpdate(insert);
         } catch (SQLException ex) {
-           ex.printStackTrace();
         }
          
        
     }
-
+  
     @Override
     public boolean alterar() {
         return false;
